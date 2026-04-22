@@ -1,0 +1,13 @@
+body{
+    background-color: #f0f8ff; /* color de fondo */
+    font-family: Arial, Helvetica, sans-serif; /* tipo de letra */
+    text-align: center; /* centramos todo */
+}
+h1 {
+    color: #2e8b57; /* color del título */
+
+}
+ul{
+    list-style: square; /*cambia los puntos de la lista*/
+    color: #ff4500; /*color de los números*/
+}
