@@ -16,35 +16,114 @@
                 margin: 0px;
                 padding-top:  20px;
             }
+            
+            /* MENU */
+            
             .menu{
                 display: flex;
                 background-color: #444;
                 color: white;
                 text-decoration: none;
-                width: 100%;
+                /* width: 100%; */
                 list-style: none;
                 padding: 0px;
                 margin: 0px;
-                
+                                
+
+            }
+            .menu > li{
+                position: relative;
+                padding: 10px 20px;
+                display: flex;
+                align-items: center;
+                color: white;
+            }
+
+            .menu > li:hover {
+                background-color: #222;
+
 
             }
            
-            li{
+            
+
+
+            /*creación del SUBMENU
+            /* submenu oculto */
+            .submenu{
+                opacity: 0;
+                visibility: hidden; /* usamos visibility en vez de display, para los efectos */
+                transform: translateY(20px);
+                pointer-events: none;
+                
+                transition: 0.2s ease;
+                position: absolute;
+                top: 100% ; /*justo debajo*/
+                left: 0;
+                background-color: #555;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                min-width: 160px;
+                border-radius: 4PX;
+                
+
+            }
+            /* items del submenú */
+            .submenu li {
+                padding: 10px;
+                border-radius: 10PX;
+                white-space: nowrap;
+            }
+
+            .submenu li:hover{
+                background-color: #222;
+
+
+            }
+         
+
+            /* contenedor del dropdown */
+            .dropdown {
+                position: relative;
+            }
+
+            /* muestra submenu al pasar ratón */
+            .dropdown:hover .submenu {
+                opacity: 1;
+                visibility: visible; /* usamos visibility en vez de display, para los efectos */
+                transform: translateY(0px);
+                pointer-events: auto;
+            }
+            
+           
+            
+            /* aquí las LISTAS */
+            
+            /* li{
                 display: flex;
                 padding: 10px;
                 list-style: none;
                 height: 40px;
                 align-items: center;
             }
-            li:hover{
+            /* li:hover{
                 background-color: #222;
-            }
+            } */ 
+            
+            
+            /* aquí las SECCIONES */
+            
             section{
                 padding: 20px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
+            
+            
+            /* aquí las CARD */
+            
             .card{
                 display: block;
                 width: 100%;
@@ -54,6 +133,10 @@
                 align-items: center;
                
             }
+            
+            
+            /* aquí el CONTENEDOR PRINCIPAL */
+
             .contenedor{
                 display: flex;
                 width: 600px;
@@ -61,6 +144,9 @@
                 
                 
             }
+            
+            /* AQUÍ LAS DOS CAJAS */
+            
             .caja{
                 background-color: #fdfcfc;
                 padding: 0px;
@@ -81,6 +167,9 @@
                 
 
             }
+            
+            /* aquí las IMAGENES */
+            
             img{
                 width: 100%;
                 /* height: 150px; */
@@ -103,7 +192,7 @@
             .importante{
                 font-weight: bold;
             }
-            span{
+            .precio{
                 font-family:Arial, Helvetica, sans-serif;
                 font-weight: bold;
                 font-size:30px;
@@ -112,6 +201,7 @@
                 color: white;
                 padding: 10px 15px;
             }
+            
             footer{
                 background-color: #222;
                 color: white;
@@ -129,7 +219,15 @@
             <nav>
                 <ul class="menu">
                     <li>Inicio</li>
-                    <li>Sobre nosotros</li>
+                        <li class="dropdown">
+                            Sobre nosotros
+                            
+                            <ul class="submenu">
+                                <li>Historia</li> 
+                                <li>Equipo </li>
+                            </ul>
+                        </li>
+                    
                 </ul>
             </nav>
 
@@ -143,7 +241,7 @@
                         <h2>Turbo Levo</h2>
                         <p>La Turbo Levo en nuestra gama de bicicletas eléctricas, es la mejor del mercado...</p>
                         <p class="importante">Precio:</p>
-                        <p><span>5900 €</span></p>
+                        <p><span class="precio">5900 €</span></p>
                         <p>Aprobecha de nuestras 
                         <p class="importante">"Últimas unidades"</p>
                     </div>  
@@ -155,7 +253,7 @@
                         <h2>Orbea Wild</h2>
                         <p>Orbea nunca decepciona, y esta vez nos trae la Wild para disfrutar como nunca...</p>
                         <p class="importante">Precio:</p>
-                        <p><span>3500 €</span></p>
+                        <p><span class="precio">3500 €</span></p>
                         <p>Aprobecha de nuestras 
                         <p class="importante">"Últimas unidades"</p>
                     </div>
