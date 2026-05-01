@@ -237,8 +237,30 @@
 
 # imprime solo los deportes cuyo tiempo sea mayor que 25 otra forma mejor
 
-datos = (("bici", 30), ("run", 20), ("swim", 40))
+# datos = (("bici", 30), ("run", 20), ("swim", 40))
 
-for deporte, tiempo in datos:
-    if tiempo > 25:
-        print(deporte)
+# for deporte, tiempo in datos:
+#     if tiempo > 25:
+#         print(deporte)
+
+
+
+# encuentra el índice o posición del número mayor
+datos = ((10, 3), (5, 8), (20,1))
+
+n_mayor = float('-inf')
+
+encontrado = False
+indice = 0
+contador = 0
+for n in datos:
+    for tupla in n:
+       if tupla > n_mayor:
+          n_mayor = tupla
+          indice = contador
+         
+    
+    contador +=1
+
+print(indice)
+
