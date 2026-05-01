@@ -8,7 +8,11 @@ for n in datos:
 
 print(suma)
 
+<<<<<<< HEAD
 # buscamos el mayor valor dentro de las tuplas, que al mismo tiempo están dentro de una lista.
+=======
+
+>>>>>>> 398d9e987ffce8183ba799fe18a53eb89fe717db
 valor = 0
 for n in datos:
     if n[1] > valor:

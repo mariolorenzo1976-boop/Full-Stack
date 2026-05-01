@@ -17,7 +17,11 @@ for n in datos:
 
 print(suma)
 
+<<<<<<< HEAD
 # imprime el deporte con más tiempo
+=======
+
+>>>>>>> 398d9e987ffce8183ba799fe18a53eb89fe717db
 mas_tiempo = 0
 deporte = ""
 for n in datos:
