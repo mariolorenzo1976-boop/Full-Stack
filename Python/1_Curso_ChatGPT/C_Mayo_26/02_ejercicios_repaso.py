@@ -34,17 +34,17 @@ for x in datos:
 
 print(nombre, mayor)
 
-# 5 Suma tiempos por deporte
-datos= [("bici", 120), ("run", 45), ("swim", 60), ("bici", 90)]
+# # 5 Suma tiempos por deporte
+# datos= [("bici", 120), ("run", 45), ("swim", 60), ("bici", 90)]
 
-lista = {}
-for x in datos:
-    if x not in lista:
-       lista [x[0]]
-    if x in lista:
-        lista[1] += x[1]
+# lista = {}
+# for x in datos:
+#     if x not in lista:
+#        lista [] = x[0]
+#     if x in lista:
+#         lista[1] += x[1]
 
-print(lista)        
+# print(lista)        
 
     
 
