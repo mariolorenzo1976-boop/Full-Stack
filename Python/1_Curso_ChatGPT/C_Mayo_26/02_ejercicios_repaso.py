@@ -35,16 +35,16 @@ for x in datos:
 print(nombre, mayor)
 
 # # 5 Suma tiempos por deporte
-# datos= [("bici", 120), ("run", 45), ("swim", 60), ("bici", 90)]
+datos= [("bici", 120), ("run", 45), ("swim", 60), ("bici", 90)]
 
-# lista = {}
-# for x in datos:
-#     if x not in lista:
-#        lista [] = x[0]
-#     if x in lista:
-#         lista[1] += x[1]
+lista = {}
+for clave, valor in datos:
+    if clave not in lista:
+       lista[clave] = 0
+    lista[clave] += valor
+        
 
-# print(lista)        
+print(lista)        
 
     
 

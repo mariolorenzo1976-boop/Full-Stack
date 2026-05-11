@@ -1,0 +1,190 @@
+head {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #EDE9E6;
+
+}
+
+h1 {
+    color: white;
+    background-color: #5C4F4A;
+    width: 100%;
+    padding: 50px;
+    margin: 0px;
+    text-align: center;
+
+}
+
+.menu {
+    display: flex;
+    padding: 0px;
+    list-style: none;
+    /* background-color: #5C4F4A; */
+    margin: 0px;
+    color: white;
+    background-color: #5C766D;
+
+
+}
+
+/* .menu ul{
+                position: absolute;
+            } */
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    border-radius: 3px;
+    background-color: #5C4F4A;
+    padding: 0px;
+    position: absolute;
+    visibility: hidden;
+    top: 100%;
+    left: 0px;
+    z-index: 1000;
+    min-width: 150px;
+    margin: 1px;
+    transform: translateY(20px);
+    opacity: 0;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* .submenu li{
+                position: relative;
+            } */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover .submenu {
+    transform: translateY(0px);
+    transition: 0.5s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu li {
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+
+
+}
+
+.menu li:hover {
+    background-color: #5C4F4A;
+}
+
+.submenu li:hover {
+    background-color: #5C766D;
+}
+
+.hamburger{
+    display: none;
+    font-size: 30px;
+    width: 100%;
+    background-color: #5C766D;
+    color:white
+
+}
+
+#toggle-menu{
+    display: none;
+}
+
+
+/* estilos del formulario */
+
+
+.contenedor_formulario{
+    width: 400px;
+    margin:auto;
+    display: flex;
+    background-color:#EDE9E6 ;
+    margin-top: 50px;
+    border-radius: 15px;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    font-family:'Courier New', Courier, monospace;
+ 
+
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px;
+
+
+}
+
+.formulario button{
+    width: 150px;
+    padding: 10px;
+    align-self: center;
+    border-style: none;
+    font-size: 15px;
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario input{
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border-style: none;
+
+}
+
+.formulario textarea{
+    width: 100%;
+    height: 300px;
+    resize: none;
+    border-radius: 5px;
+    border-style: none;
+
+}
+
+button:hover {
+    background-color: #5C766D;
+}
+
+
+@media (max-width: 760px){
+    .menu{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .hamburger {
+        display:block;
+    }
+   #toggle-menu:checked + .hamburger + .menu{
+        display: flex;
+    }
+    .menu li{
+        width: 100%;
+    }
+
+}
+
+
+    

@@ -1,13 +1,14 @@
 '''
 Tenemos una variedad de tipo de datos y estructuras
 
+texto: str
 enteros: int
 decimales: float
-complejos: 2+j 4h
+complejos: 2j
 listas: []
 tuplas: ()
 diccionarios:{}
-etc
+
 
 '''
 
@@ -17,3 +18,4 @@ datos = [1, 2, 3, 4, 5, 6]
 
 print(type(datos))
 
+# y nos devuele que es una lista <class 'list'>
