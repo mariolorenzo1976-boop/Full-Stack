@@ -1,4 +1,4 @@
- /* * { outline:1px solid red} */
+ * { outline:1px solid red}
 
  body {
      margin: 0px;
@@ -81,6 +81,7 @@
 
  .submenu li {
      padding: 0px;
+     
 
  }
 

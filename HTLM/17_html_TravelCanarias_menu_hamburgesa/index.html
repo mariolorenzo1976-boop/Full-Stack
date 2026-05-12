@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Web TraveCanarias</title>
+    <style>
+        
+        /********** GENERAL **********/
+       
+        /* * { outline:1px solid red} */
+        
+        *{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            text-decoration: none;
+
+        }
+        :root{
+            --color_general_moca:#FFF6DE;
+            --color_menu_fondo:#F48F68;
+            --color_menu_hover:#8BDFDD;
+
+        }
+
+        a{
+            cursor: pointer;
+        }
+        /* .contener_general{
+            max-width: 1440px;
+
+        } */
+
+         /********** HEADER **********/    
+
+        .container_header{
+            width: 100%;
+            height: 200px;
+            max-width: 1440px;
+            background-color: var(--color_general_moca);
+           
+        }
+        
+        .container_header h1{
+            text-align: center;
+            padding: 60px;
+            
+        }
+
+        /********** MENÚ **********/
+        
+        .menu{
+            display: flex;
+            background-color: var(--color_menu_fondo);
+          
+        }
+
+        .menu li{
+            position: relative;
+            padding: 15px;
+            /* cursor: pointer; */
+            
+            
+        }
+
+        .menu li:hover{
+            background-color: var(--color_menu_hover);
+            cursor: pointer;
+            transition: 0.8s;
+            
+        }
+
+        .menu li a{
+            color: white;
+            cursor: pointer;
+            
+            
+        }
+
+        /* .menu li a:hover{
+            cursor: pointer;
+        }
+         */
+        /********** SUBMENÚ **********/
+        
+        .dropdown {
+            position: relative;
+            cursor: pointer;
+            
+        }
+
+        .dropdown:hover .submenu {
+            visibility: visible;
+            cursor: pointer;
+            /* transform: translateY(0px);
+            transition: 0.8s;
+            opacity: 1; */
+            
+        }
+
+        .submenu{
+            visibility: hidden;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            top:100%;
+            left:0;
+            width: 200px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            background-color: var(--color_menu_fondo);
+            /* transform: translateY(10px);
+            opacity: 0; */
+            border-radius: 5px;
+            /* transition: 0.8s; */
+            z-index: 1000;
+           
+        }
+        
+        .submenu li a{
+            display:block;
+            cursor: pointer !important;
+        }
+
+        .submenu li{
+            cursor: pointer;
+            cursor: pointer !important;
+        }
+       
+
+
+        
+
+
+    </style>
+</head>
+<body>
+    <header>
+        
+        <div class="container_header">
+            <h1>TravelCanarias</h1>
+                
+        </div>
+            
+        <div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li class="dropdown"><a href="#">
+                        Destinos</a>
+                        <ul class="submenu">
+                            <li><a href="#">Tenerife</a></li>
+                            <li><a href="#">La Gomera</a></li>
+                            <li><a href="https://google.com">La Palma</a></li>
+                            <li><a href="#">El Hierro</a></li>
+                            <!-- <li><a href="#">El Hierro</a></li> -->
+                        </ul> 
+                    </li>
+                    <li><a href="#">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+      
+    </header>
+    
+</body>
+</html>
