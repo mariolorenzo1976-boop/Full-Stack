@@ -1,0 +1,307 @@
+        /********** GENERAL **********/
+
+        /* * { outline:1px solid red} */
+       /* # * {background-color: rgba(255,0,0,0.2);} */
+            
+        * {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        :root {
+            --color_general_moca: #FFF6DE;
+            --color_menu_fondo: #F48F68;
+            --color_menu_hover: #8BDFDD;
+        }
+        a {
+            cursor: pointer;
+        }
+
+        
+        /********** HEADER **********/
+        
+        .container_header {
+            width: 100%;
+            height: 200px;
+            max-width: 1440px;
+            background-color: var(--color_general_moca);
+            margin: auto;
+        }
+        .container_header h1 {
+            text-align: center;
+            padding: 60px;
+        }
+
+
+
+
+        /********** MENÚ **********/
+
+        .menu {
+            display: flex;
+            background-color: var(--color_menu_fondo);
+            max-width: 1440px;
+            margin:auto;
+        }
+        .menu li {
+            position: relative;
+            padding: 15px;
+            /* cursor: pointer; */
+
+
+        }
+        .menu li:hover {
+            background-color: var(--color_menu_hover);
+            cursor: pointer;
+            transition: 0.8s;
+        }
+        .menu li a {
+            color: white;
+            cursor: pointer;
+        }
+
+       
+
+
+
+        /********** SUBMENÚ **********/
+
+        .dropdown {
+            position: relative;
+            cursor: pointer;
+        }
+        .dropdown:hover .submenu {
+            visibility: visible;
+            cursor: pointer;
+            /* transform: translateY(0px);
+            transition: 0.8s;
+            opacity: 1; */
+        }
+        .submenu li:hover {
+            background-color: var(--color_menu_hover);
+            cursor: pointer;
+            transition: 0.8s;
+            /* min-width: 100%; */
+        }
+        .submenu {
+            visibility: hidden;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            top: 100%;
+            left: 0;
+            min-width: 180px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            background-color: var(--color_menu_fondo);
+            /* transform: translateY(10px);
+            opacity: 0; */
+            border-radius: 5px;
+            /* transition: 0.8s; */
+            z-index: 1000;
+        }
+        .submenu li a {
+            display: block;
+            cursor: pointer !important;
+        }
+        .submenu li {
+            cursor: pointer;
+            cursor: pointer !important;
+        }
+
+       
+       
+       
+       
+        /**********  CARD **********/
+
+        .container_principal_cajas{
+            display: flex;
+            margin: auto;
+            align-items: center;
+            height: 400px;
+            max-width: 1440px;
+            justify-content: center;
+            gap:40px;
+        }
+       
+       
+       
+       
+       
+        /**********  CARD 1 **********/        
+        .card1{
+            margin-top: 40px;
+            max-width: 250px;
+            height: auto;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            align-items: center;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            background-color: white;
+            transition:0.3s;
+            cursor: pointer;
+       }
+       .card1 h1{
+            margin-top: 20px;    
+       }
+       .card1 a{
+            background-color: var(--color_menu_fondo);
+            padding: 8px 15px;
+            /* position: absolute; */
+            width: 150px;
+            border-radius: 8px;
+            color: white;
+            display: block;
+            margin: 20px auto 0 auto;
+            transition: 0.3s;
+
+       }
+
+       .card1 span{
+            font-size: 25px;
+            font-family: sans-serif;
+            color:red;
+            font-style: italic;
+
+       }
+       .card1 p{
+            /* display: block;
+            margin: 20px auto 0 auto; */
+            /* position: relative; */
+            margin-top: 20px;
+       }
+
+       .card1 img{
+            max-width: 250px;
+            margin: -20px;
+            border-radius: 8px;
+       }
+       .card1:hover {
+            transform: scale(1.03);
+            transition:0.3s;
+
+       }
+       .card1 a:hover{
+            background-color: var(--color_menu_hover);
+            transition: 0.3s;
+       }
+
+
+
+        /**********  CARD 2 **********/
+
+       .card2{
+            margin-top: 40px;    
+            max-width: 250px;    
+            height: auto;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            align-items: center;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            background-color: white;
+            transition: 0.3s;
+            cursor: pointer;
+       }
+        .card2 h1{
+            margin-top: 20px;    
+       }
+       .card2 a{
+            background-color: var(--color_menu_fondo);
+            padding: 8px 15px;
+            /* position: absolute; */
+            width: 150px;
+            border-radius: 8px;
+            color: white;
+            display: block;
+            margin: 20px auto 0 auto;
+            transition: 0.3s;
+         
+       }
+       .card2 a:hover{
+            background-color: var(--color_menu_hover);
+            transition: 0.3s;
+       }
+       .card2 p{
+            /* display: block;
+            margin: 20px auto 0 auto; */
+            /* position: relative; */
+            margin-top: 20px;
+       }
+       .card2 span{
+            font-size: 25px;
+            font-family: sans-serif;
+            color:red;
+            font-style: italic;
+       }
+        .card2 img{
+            max-width: 250px;
+            margin: -20px;
+            border-radius: 8px;
+        }
+       .card2:hover {
+        transform: scale(1.03);
+        transition:0.3s;
+       }
+       
+       
+       
+        /**********  HAMBURGESA **********/
+              
+        .hamburger{
+            font-size: 35px;
+            background-color: var(--color_menu_fondo);
+            width: 100%;
+            padding: 15px;
+            margin:0 px;
+            position: relative;
+            display: none;
+        }
+        #toggle-menu{
+            display: none;
+        }
+
+        @media(max-width: 760px){
+          .hamburger{
+            display:block;
+          }  
+          .menu{
+            display: none;
+            width: 100%;
+            flex-direction: column;
+          }
+          #toggle-menu:checked + .hamburger + .menu{
+            display: flex;
+          }
+          .menu li{
+            width: 100%;
+          }
+          .submenu li{
+            width: 100%;
+            padding: 0px;
+            margin-top: 10px;
+          }
+          .submenu a{
+            width: 100%;
+            padding: 15px 20px;
+            /* margin-top: 10px; */
+          }
+          .submenu{
+            position:static;
+            width: 100%;
+            display: none;
+            /* margin-top: 10px; */
+          }
+          .dropdown:hover .submenu{
+            display: block;
+            margin:0;
+          }
+          .container_principal_cajas{
+            flex-direction: column;
+            margin-top: 20px;
+            height: unset;
+        }
+    }
