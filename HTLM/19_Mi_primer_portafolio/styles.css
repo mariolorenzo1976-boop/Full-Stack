@@ -1,6 +1,7 @@
-        * {
-            /* outline:1px solid red; */
-        }
+         /*{
+            /*outline:1px solid red; */
+            /* border:solid 1px #62BA1B; */
+        /*}
 
 
         /* ---------- GENERAL ---------- */
@@ -26,7 +27,6 @@
             display: flex;
             flex-direction: column;
             background-color: black;
-            /* max-width: 1280px; */
             width: 100%;
             align-items: center;
             justify-content: center;
@@ -38,8 +38,9 @@
         .nav_top {
             display: flex;
             background-color: #1B1B1B;
-            /* min-width:1110px; */
-            width: 1110px;
+            max-width: 1110px;
+            width: 100%;
+            margin: 0 auto;
             height: 70px;
             align-items: center;
             justify-content: center;
@@ -51,7 +52,7 @@
             display: flex;
             background-color: #1B1B1B;
             margin: auto;
-            gap: 103px;
+            gap: 60px;
             width: 100%;
         }
 
@@ -60,10 +61,12 @@
             font-family: var(--font_IBM_Plex_mono);
             font-size: 14px;
             letter-spacing: 1px;
+            
         }
 
         .menu li a:hover {
             color: white;
+            transition: 0.3s;
         }
 
         .iconos {
@@ -78,16 +81,18 @@
         .name_photo {
             display: flex;
             max-width: 950px;
-            flex-wrap: wrap;
             justify-content: space-between;
             width: 100%;
             height: 100%;
-            align-items: center
+            align-items: center;
+            gap:20px;
         }
 
         .imagen_perfil {
-            width: 350px;
-            height: 350px;
+            display: flex;
+            object-fit: cover;
+            justify-content: space-between;
+            align-items: center;   
         }
 
         /* ---------- SUB-CONTENER NAME, DESCRIPTION AND GREEN BUTTON (ACTION) ---------- */
@@ -131,8 +136,13 @@
             font-family: var(--font_IBM_Plex_mono);
             font-weight: bold;
             font-size: 16px;
-            border:solid 1px #62BA1B;
-            
+            border: solid 1px #62ba1b4d;
+        }
+        
+        .accion:hover {
+            color: var(--font_color_gray_menu);
+            transition: 0.4s;
+
         }
 
         /* ---------- WORK WITH BUTTONs  ---------- */
@@ -167,7 +177,6 @@
             gap: 15px;
             width: 160px;
             height: 60px;
-            border-color: #3F8E00;
             border-radius: 5px;
             border: 1px solid var(--iconos_work_width);
             justify-content: center;
@@ -201,7 +210,7 @@
             display: none;
         }
 
-        @media (max-width: 950px) {
+        @media (max-width: 1110px) {
 
             .hamburger {
                 display: block;
@@ -216,12 +225,7 @@
                 transform: translateY(0px);
             }
 
-            /* ++++++++++ MAIN CONTAINER ++++++++++ */
-             .contenedor_general_header {
-                gap: 20px;
-            }
-
-            
+           
             /* ++++++++++ MENÚ - NAV - SOCIAL MEDIA ++++++++++ */
             .iconos {
                 padding: 20px
@@ -241,7 +245,6 @@
                 transition: 0.6s ease;
                 flex-direction: column;
                 width: 100%;
-                /* position: relative; */
                 gap: 0px;
                 margin-left: 0px;
                 transform: translateY(10px);
@@ -258,63 +261,68 @@
             }
 
             /* ++++++++++ CONTAINER NAME_PHOTO (PROFILE PICTURE)  ++++++++++ */
-
-            .name_description {
-                margin-top: 50px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .name_description h1 {
-                font-size: 25px;
-            }
-
-            .name_description p {
-                padding: 20px;
-                text-align: center;
-            }
-
-            .name_photo {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .imagen_perfil {
-                order: -1;
-                width: 250px;
-                height: 250px;
-            }
-
-            .imagen_perfil img {
-                width: 100%;
-                height: 100%;
-            }
-
-           
-           /* ++++++++++ WORK WITH BUTTONs  ++++++++++ */
-            .worked_with {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
+            @media (max-width: 950px){
+                
+                /* ++++++++++ MAIN CONTAINER ++++++++++ */
+                .contenedor_general_header {
                 gap: 20px;
-                padding: 20px;
-            }
+                }
+                .name_description {
+                    margin-top: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
 
-            .worked_with a {
-                font-size: 14px;
-            }
+                .name_description h1 {
+                    font-size: 25px;
+                }
 
-            .worked_with img {
-                width: 40px;
-                height: 40px;
-            }
+                .name_description p {
+                    padding: 20px;
+                    text-align: center;
+                }
 
-            .worked_with .iconos_worked_with {
-                gap: 10px;
-                width: 140px;
-                height: 40px;
+                .name_photo {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .imagen_perfil {
+                    order: -1;
+                    width: 150px;
+                    height: 150px;
+                }
+
+                .imagen_perfil img {
+                    width: 100%;
+                    height: 100%;                    
+                }
+                /* ++++++++++ WORK WITH BUTTONs  ++++++++++ */
+                .worked_with {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    gap: 20px;
+                    padding: 20px;
+                }
+
+                .worked_with a {
+                    font-size: 14px;
+                }
+
+                .worked_with img {
+                    width: 40px;
+                    height: 40px;
+                }
+
+                .worked_with .iconos_worked_with {
+                    gap: 10px;
+                    width: 140px;
+                    height: 40px;
+                }
+           
             }
 
         }
