@@ -7,11 +7,16 @@
     <style>
        
        *{outline: 1px solid red;}
+       
+       
        .contenedor{
             display:flex;
             flex-wrap: wrap;
-            justify-content: center;
-            gap:20px;
+            justify-content:space-between ;
+            max-width: 1140px;
+            margin: 0 auto;
+           
+           
        }
        
        
@@ -32,7 +37,7 @@
         
             min-width: 200px;
             min-height: 200px;
-            background-color:red ;
+            background-color:green ;
             
             /* Alineamos el texto al centro con display flex, y con justify-content alineamos al medio horizontal y con align-items al medio vertical */
             display: flex;
@@ -89,12 +94,12 @@
     </style>
 </head>
 <body>
-    <section class="contenedor">
+    <div class="contenedor">
         <div class="caja1">Caja1</div>
         <div class="caja2">Caja2</div>
-        <div class="caja3">Caja3</div>
+        <!-- <div class="caja3">Caja3</div>
         <div class="caja4">Caja4</div>
-        <div class="caja5">Caja5</div>
-    </section>
+        <div class="caja5">Caja5</div> -->
+    </div>
 </body>
 </html>

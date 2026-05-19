@@ -1,8 +1,10 @@
-*{
+        * {
             /* outline:1px solid red; */
         }
 
-       *{
+
+        /* ---------- GENERAL ---------- */
+        * {
             margin: 0;
             padding: 0;
             list-style: none;
@@ -10,109 +12,116 @@
             box-sizing: border-box;
         }
 
+
+        /* ---------- VARIABLES ---------- */
         :root {
             --font_IBM_Plex_mono: 'IBM Plex Mono', monospace;
             --font_color_gray_menu: #9C9C9C;
-            --iconos_work_width:#444444;
+            --iconos_work_width: #444444;
         }
-        /* .body{
-            display: flex;
-            background-color: black;
-            align-items: center;
-            min-height: 100vh;
 
-        } */
-        .contenedor_general_header{
+
+        /* ---------- MAIN HEADER ---------- */
+        .contenedor_general_header {
             display: flex;
             flex-direction: column;
             background-color: black;
             /* max-width: 1280px; */
-            width:100%;
+            width: 100%;
             align-items: center;
             justify-content: center;
-            gap:100px;
+            gap: 100px;
             margin: 0 auto;
-
         }
-        .nav_top{
-            display:flex;
-            background-color: #1B1B1B ;
-            min-width:1110px;
+
+        /* ---------- MENÚ - NAV - SOCIAL MEDIA ---------- */
+        .nav_top {
+            display: flex;
+            background-color: #1B1B1B;
+            /* min-width:1110px; */
+            width: 1110px;
             height: 70px;
             align-items: center;
             justify-content: center;
             border-radius: 0px 0px 10px 10px;
-           
-            
-
+            gap: 100px;
         }
 
-        .menu{
-            display:flex;
+        .menu {
+            display: flex;
             background-color: #1B1B1B;
             margin: auto;
-            gap: 103px
-
-            
+            gap: 103px;
+            width: 100%;
         }
-        .menu li a{
+
+        .menu li a {
             color: var(--font_color_gray_menu);
             font-family: var(--font_IBM_Plex_mono);
             font-size: 14px;
-            letter-spacing: 1%;
+            letter-spacing: 1px;
         }
-        .nav_top{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap:100px
-        }
-        
-        .iconos{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap:20px;
 
+        .menu li a:hover {
+            color: white;
         }
-        .name_description{
+
+        .iconos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+
+        /* ---------- CONTAINER NAME_PHOTO (PROFILE PICTURE)  ---------- */
+        .name_photo {
+            display: flex;
+            max-width: 950px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+            align-items: center
+        }
+
+        .imagen_perfil {
+            width: 350px;
+            height: 350px;
+        }
+
+        /* ---------- SUB-CONTENER NAME, DESCRIPTION AND GREEN BUTTON (ACTION) ---------- */
+        .name_description {
             display: flex;
             flex-direction: column;
-            width:538px;
+            width: 100%;
+            height: 100%;
+            max-width: 580px;
+            justify-content: space-between;
+            padding: 20px;
         }
-        .name_description h1{
+
+        .name_description h1 {
             color: white;
             font-family: "Raleway", sans-serif;
             font-size: 44px;
-            
-
         }
-        .name_description p{
-            color:white;
+
+        .name_description p {
+            color: white;
             margin-top: 10px;
-            color:var(--font_color_gray_menu);
+            color: var(--font_color_gray_menu);
             font-family: var(--font_IBM_Plex_mono);
             font-size: 14px;
             line-height: 1.6;
             letter-spacing: 1px;
-           
-            
         }
-        
-        .name_photo {
-            display: flex;
-            align-items: center;
-            gap:80px;
-            max-width: 950px;
 
-        }
-        
-        .accion{
+        .accion {
             display: flex;
             margin-top: 20px;
-            color:white;
+            color: white;
             background-color: #3F8E00;
-            border-color: #62BA1B;
             box-shadow: 0px 8px 24px #62ba1b4d;
             width: 307px;
             height: 67px;
@@ -122,48 +131,190 @@
             font-family: var(--font_IBM_Plex_mono);
             font-weight: bold;
             font-size: 16px;
-            border-color:#3F8E00;
-
-
+            border:solid 1px #62BA1B;
+            
         }
-        .imagen_perfil {
-            width: 350px;
-            height: 350px;
+
+        /* ---------- WORK WITH BUTTONs  ---------- */
+        
+        .div_line_work_with{
+            width: 100%;
+            max-width: 950px;
         }
-        .worked_with{
+        .line_work_with{
+            color: white;
+            font-family: var(--font_IBM_Plex_mono);
+            letter-spacing: 1px;
+            font-size: 12px;
+            margin:20px;
+            
+           
+        }
+        .worked_with {
             display: flex;
-            min-width: 950px;
+            flex-wrap: wrap;
+            max-width: 950px;
+            width: 100%;
             height: auto;
             margin-bottom: 50px;
-            justify-content:space-between;
+            justify-content: space-between;
             align-items: center;
-            
-
-
         }
-        .iconos_worked_with{
-            display:flex;
+
+        .iconos_worked_with {
+            display: flex;
             align-items: center;
-            gap:15px;
+            gap: 15px;
             width: 160px;
             height: 60px;
             border-color: #3F8E00;
-            /* box-shadow: 5px 5px 5px rgba(255, 254, 254, 0.1); */
             border-radius: 5px;
             border: 1px solid var(--iconos_work_width);
             justify-content: center;
-            /* padding:5px 15px; */
         }
 
-        .iconos_worked_with a{
-            color:var(--iconos_work_width);
-            border:none;
+        .iconos_worked_with a {
+            color: var(--iconos_work_width);
+            border: none;
             font-family: "Raleway", sans-serif;
             font-weight: bold;
             font-size: 18px;
+            cursor: default;
         }
 
-        .iconos_worked_with img{
+        .iconos_worked_with img {
             width: 40px;
             height: 40px;
+        }
+
+
+        /* ++++++++++ RESPONSIVE ++++++++++ */
+
+        /* ++++++++++ HAMBURGER ++++++++++ */
+        #toggle-menu {
+            display: none;
+        }
+
+        .hamburger {
+            color: var(--font_color_gray_menu);
+            font-size: 40px;
+            display: none;
+        }
+
+        @media (max-width: 950px) {
+
+            .hamburger {
+                display: block;
+                padding: 20px;
+                width: 100%;
+                cursor: pointer;
+            }
+            
+            #toggle-menu:checked+.hamburger+.menu {
+                max-height: 500px;
+                opacity: 1;
+                transform: translateY(0px);
+            }
+
+            /* ++++++++++ MAIN CONTAINER ++++++++++ */
+             .contenedor_general_header {
+                gap: 20px;
+            }
+
+            
+            /* ++++++++++ MENÚ - NAV - SOCIAL MEDIA ++++++++++ */
+            .iconos {
+                padding: 20px
+            }
+
+            .nav_top {
+                display: inline-block;
+                width: 100%;
+                height: auto;
+                justify-content: space-between;
+            }
+
+            .menu {
+                max-height: 0px;
+                overflow: hidden;
+                opacity: 0;
+                transition: 0.6s ease;
+                flex-direction: column;
+                width: 100%;
+                /* position: relative; */
+                gap: 0px;
+                margin-left: 0px;
+                transform: translateY(10px);
+            }
+
+            .menu li {
+                width: 100%;
+                padding: 20px;
+            }
+
+            .menu li a {
+                width: 100%;
+                height: 100%;
+            }
+
+            /* ++++++++++ CONTAINER NAME_PHOTO (PROFILE PICTURE)  ++++++++++ */
+
+            .name_description {
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .name_description h1 {
+                font-size: 25px;
+            }
+
+            .name_description p {
+                padding: 20px;
+                text-align: center;
+            }
+
+            .name_photo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .imagen_perfil {
+                order: -1;
+                width: 250px;
+                height: 250px;
+            }
+
+            .imagen_perfil img {
+                width: 100%;
+                height: 100%;
+            }
+
+           
+           /* ++++++++++ WORK WITH BUTTONs  ++++++++++ */
+            .worked_with {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .worked_with a {
+                font-size: 14px;
+            }
+
+            .worked_with img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .worked_with .iconos_worked_with {
+                gap: 10px;
+                width: 140px;
+                height: 40px;
+            }
+
         }
