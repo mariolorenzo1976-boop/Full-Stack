@@ -1,7 +1,7 @@
-         /*{
-            /*outline:1px solid red; */
+       
+            /* * {outline: 1px solid red;} */
             /* border:solid 1px #62BA1B; */
-        /*}
+       
 
 
         /* ---------- GENERAL ---------- */
@@ -17,8 +17,10 @@
         /* ---------- VARIABLES ---------- */
         :root {
             --font_IBM_Plex_mono: 'IBM Plex Mono', monospace;
+            --font_Raleway: 'Raleway', sans-serif;
             --font_color_gray_menu: #9C9C9C;
             --iconos_work_width: #444444;
+          
         }
 
 
@@ -108,7 +110,7 @@
 
         .name_description h1 {
             color: white;
-            font-family: "Raleway", sans-serif;
+            font-family: var(--font_Raleway);
             font-size: 44px;
         }
 
@@ -185,7 +187,7 @@
         .iconos_worked_with a {
             color: var(--iconos_work_width);
             border: none;
-            font-family: "Raleway", sans-serif;
+            font-family: var(--font_Raleway);
             font-weight: bold;
             font-size: 18px;
             cursor: default;
@@ -195,6 +197,186 @@
             width: 40px;
             height: 40px;
         }
+
+
+        /* ---------- PROYECTOS SECTION  ---------- */
+        
+        
+        .proyectos {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            padding: 15px;
+        }
+        
+        .proyectos h2 {
+            font-family:var(--font_Raleway);
+            font-weight: bold;
+            font-size: 24 px;
+        }
+
+        .proyectos .mis_proyectos {
+            font-family: var(--font_IBM_Plex_mono);
+            font-size: 14px;
+            color: var(--font_color_gray_menu);
+            text-align: center;
+            max-width: 570px;
+            width: 100%;
+            letter-spacing: 1px;
+            margin-top: 20px;
+            line-height: 24px;
+        }
+
+        .caja1 {
+            display: flex;
+            margin-top: 80px;
+            max-width: 897px;
+            max-height: 300;
+            height: 100%;
+            width: 100%;
+            justify-content: space-between;
+            gap:60px;
+        }
+
+        .caja_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap:10px;
+            max-width: 431px;
+            width: 100%;
+        }
+
+        .caja1_tag{
+            font-family: var(--font_IBM_Plex_mono);
+            font-size: 12px;
+            background-color: #bab8b5 ;
+            max-width: 90px;
+            text-align: center;
+            padding: 5px;
+            border-radius: 15px;
+            color:  #4d4c4c;
+            transform: scaleY(0.9);
+        }
+
+       .caja_h3{
+            font-family: var(--font_Raleway);
+            font-size: 24px;
+            transform: scaleY(0.9);
+        }
+
+        .caja_p{
+            width: 100%;
+            letter-spacing: 1px;
+            margin-top: 10px;
+            line-height: 24px;
+            color: var(--font_color_gray_menu);
+            font-family: var(--font_IBM_Plex_mono);
+            font-size: 14px;
+        }
+
+        .caja_imagen1 img{
+            max-width: 445px;
+            width: 100%;
+            border-radius: 5px; 
+        }
+
+        .caja1_a{
+            background-color: #4d4c4c ;
+            max-width: 150px;
+            text-align: center;
+            padding: 15px;
+            border-radius: 5px;
+            color: #bab8b5;
+            font-family: var(--font_IBM_Plex_mono);
+            font-size: 14px;
+            transform: scaleY(0.9);
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .caja2 {
+            display: flex;
+            margin-top: 80px;
+            max-width: 897px;
+            max-height: 300;
+            height: 100%;
+            width: 100%;
+            justify-content: space-between;
+            gap:60px;
+        }
+
+         .caja_imagen2 {
+            
+            order:-1;
+        }
+
+        .caja_imagen2 img{
+            max-width: 445px;
+            width: 100%;
+            border-radius: 5px;    
+        }
+
+        .caja2_tag{
+            font-family: var(--font_IBM_Plex_mono);
+            font-size: 12px;
+            background-color: #E0FFF8 ;
+            max-width: 90px;
+            text-align: center;
+            padding: 5px;
+            border-radius: 15px;
+            color: #2AB090;
+            transform: scaleY(0.9);
+        }
+
+        .caja2_a{
+            background-color: #2AB090;
+            max-width: 150px;
+            text-align: center;
+            padding: 15px;
+            border-radius: 5px;
+            color: #E0FFF8;
+            font-family: var(--font_IBM_Plex_mono);
+            font-size: 14px;
+            transform: scaleY(0.9);
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .caja3_tag{
+            font-family: var(--font_IBM_Plex_mono);
+            font-size: 12px;
+            background-color: #FFF6E9 ;
+            max-width: 90px;
+            text-align: center;
+            padding: 5px;
+            border-radius: 15px;
+            color: #FFA217;
+            transform: scaleY(0.9);
+        }
+         
+        .caja3_a{
+            background-color: #FFA217 ;
+            max-width: 150px;
+            text-align: center;
+            padding: 15px;
+            border-radius: 5px;
+            color: #FFF6E9;
+            font-family: var(--font_IBM_Plex_mono);
+            font-size: 14px;
+            transform: scaleY(0.9);
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+
+
+
+
+
 
 
         /* ++++++++++ RESPONSIVE ++++++++++ */
