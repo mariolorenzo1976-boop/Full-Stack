@@ -20,6 +20,7 @@
             --font_Raleway: 'Raleway', sans-serif;
             --font_color_gray_menu: #9C9C9C;
             --iconos_work_width: #444444;
+            --color_background_label: #161616;
           
         }
 
@@ -85,16 +86,17 @@
             max-width: 950px;
             justify-content: space-between;
             width: 100%;
-            height: 100%;
             align-items: center;
             gap:20px;
         }
 
         .imagen_perfil {
             display: flex;
-            object-fit: cover;
-            justify-content: space-between;
             align-items: center;   
+        }
+
+        .imagen_perfil img{
+             object-fit: cover;
         }
 
         /* ---------- SUB-CONTENER NAME, DESCRIPTION AND GREEN BUTTON (ACTION) ---------- */
@@ -139,11 +141,12 @@
             font-weight: bold;
             font-size: 16px;
             border: solid 1px #62ba1b4d;
+            transition: 0.4s;
         }
         
         .accion:hover {
             color: var(--font_color_gray_menu);
-            transition: 0.4s;
+            
 
         }
 
@@ -199,7 +202,7 @@
         }
 
 
-        /* ---------- PROYECTOS SECTION  ---------- */
+        /* ---------- PROYECTOS SECTION - section-1  ---------- */
         
         
         .proyectos {
@@ -277,7 +280,12 @@
             font-family: var(--font_IBM_Plex_mono);
             font-size: 14px;
         }
-
+        
+        .caja_imagen1 {
+            display:flex;
+            align-items: center;
+        }
+        
         .caja_imagen1 img{
             max-width: 445px;
             width: 100%;
@@ -309,11 +317,12 @@
             gap:60px;
         }
 
-         .caja_imagen2 {
-            
+        .caja_imagen2 {
+            display:flex;
+            align-items: center;
             order:-1;
         }
-
+        
         .caja_imagen2 img{
             max-width: 445px;
             width: 100%;
@@ -374,8 +383,103 @@
 
 
 
+/* ---------- PORTFOLIO-ONE-PAGE - section-2  ---------- */
+        .portfolio_one-page{
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            color:white;
+            justify-content: center;
+            align-items: center;
+            margin-top: 90px;
+            gap: 40px;
+            padding: 20px;
+        }
+         
+        .portfolio_one-page-description{
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            max-width: 897px;
+        }
 
 
+        .portfolio_one-page-description h2{
+            margin-top: 20px;
+            font-family: var(--font_IBM_Plex_mono);
+            font-size: 60px;
+            text-align: center;
+            /* color:var(--font_color_gray_menu); */
+        }
+
+        .label{
+            font-family: var(--font_IBM_Plex_mono);
+            align-self: flex-start;
+            text-align: left;
+            background-color: var(--color_background_label);
+            border-radius: 5px;
+            padding: 10px;
+            transform: scaley(0.9);
+            max-width: 180px;
+           
+        }
+
+        .portfolio_one-page_p {
+            
+            font-family: var(--font_IBM_Plex_mono);
+            letter-spacing: 1px;
+            font-size: 14px;
+            line-height: 24px;
+            color: var(--font_color_gray_menu);
+            text-indent: 30px;
+            text-align: justify;
+            
+           
+           
+        }
+
+        
+
+        .cajas_portfolio{
+            display: flex;
+            flex-direction: column;
+            gap:50px;
+            max-width: 897px;
+            align-items: center;
+
+        }
+
+        .cajas_portfolio_historia{
+            display: flex;
+            margin-top: 20px;
+            align-items: center;
+            max-width: 797px;
+            justify-content: space-between;
+            gap: 60px;
+        }
+
+        .label_description{
+            gap: 50px;
+            /* max-width: 380px; */
+        }
+
+          
+    
+        .cajas_portfolio_historia img{
+            max-width: 345px ;
+            border-radius: 10px;
+            border: solid 1px;
+            border-color: var(--color_background_label);
+            /* width: 100%; */
+            
+        }
+
+        .orden {
+            order: -1;
+        }
+
+
+       
 
 
 
@@ -441,70 +545,93 @@
                 width: 100%;
                 height: 100%;
             }
-
+        }    
             /* ++++++++++ CONTAINER NAME_PHOTO (PROFILE PICTURE)  ++++++++++ */
-            @media (max-width: 950px){
+        @media (max-width: 950px){
                 
-                /* ++++++++++ MAIN CONTAINER ++++++++++ */
-                .contenedor_general_header {
-                gap: 20px;
-                }
-                .name_description {
-                    margin-top: 50px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
-
-                .name_description h1 {
-                    font-size: 25px;
-                }
-
-                .name_description p {
-                    padding: 20px;
-                    text-align: center;
-                }
-
-                .name_photo {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
-
-                .imagen_perfil {
-                    order: -1;
-                    width: 150px;
-                    height: 150px;
-                }
-
-                .imagen_perfil img {
-                    width: 100%;
-                    height: 100%;                    
-                }
-                /* ++++++++++ WORK WITH BUTTONs  ++++++++++ */
-                .worked_with {
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-items: center;
-                    gap: 20px;
-                    padding: 20px;
-                }
-
-                .worked_with a {
-                    font-size: 14px;
-                }
-
-                .worked_with img {
-                    width: 40px;
-                    height: 40px;
-                }
-
-                .worked_with .iconos_worked_with {
-                    gap: 10px;
-                    width: 140px;
-                    height: 40px;
-                }
-           
+            /* ++++++++++ MAIN CONTAINER ++++++++++ */
+            .contenedor_general_header {
+                 gap: 20px;
+            }
+            .name_description {
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
+            .name_description h1 {
+                font-size: 25px;
+            }
+
+            .name_description p {
+                padding: 20px;
+                text-align: center;
+            }
+
+            .name_photo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .imagen_perfil {
+                order: -1;
+                width: 150px;
+                height: 150px;
+            }
+
+            .imagen_perfil img {
+                width: 100%;
+                height: 100%;                    
+            }
+            /* ++++++++++ WORK WITH BUTTONs  ++++++++++ */
+            .worked_with {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .worked_with a {
+                font-size: 14px;
+            }
+
+            .worked_with img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .worked_with .iconos_worked_with {
+                gap: 10px;
+                width: 140px;
+                height: 40px;
+            }
+            
+        }    
+                /* ++++++++++ CAJAS  ++++++++++ */
+
+         @media (max-width: 780px){
+                    
+            .caja1 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .caja2 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .caja_imagen2 {
+                order: 1;
+            }
+            
         }
+            
+
+
+
+
