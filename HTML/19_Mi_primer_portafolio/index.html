@@ -18,13 +18,22 @@
                 rel="stylesheet">
    
     
-            <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Mario Lorenzo - Portfolio</title>
 
 
 
 </head>
+
+
+
 <body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
     <header>
         <div class="contenedor_general_header">
             <div class="nav_top">
@@ -101,12 +110,12 @@
 
 
 
-        <section class="proyectos" id="section-1">
+        <section class="proyectos" id="section-1" data-aos="fade-down" data-aos-duration="2000">
             <h2 >Mis Proyectos</h2>
             <p class="mis_proyectos">Proyectos desarrollados mientras aprendo desarrollo frontend, diseño responsive 
                y scripting con Python para seguir mejorando mis habilidades como desarrollador. </p>
             
-            <div class="caja1">
+            <div class="caja1" data-aos="fade-right" data-aos-duration="1000">
                 <div class="caja_text">
                     <span class="caja1_tag">Htlm + CSS</span>
                     <h3 class="caja_h3">Portfolio one - page</h3>
@@ -119,7 +128,7 @@
                 </div>
             </div>
             
-            <div class="caja2">
+             <div class="caja2" data-aos="fade-right" data-aos-duration="1000">
                 <div class="caja_text">
                     <span class="caja2_tag">cards + call action</span>
                     <h3 class="caja_h3">Bike World</h3>
@@ -133,7 +142,7 @@
                 </div>
             </div>
             
-            <div class="caja1">
+            <div class="caja1" data-aos="fade-right" data-aos-duration="1000">
                 <div class="caja_text">
                     <span class="caja3_tag">Menu Responsive</span>
                     <h3 class="caja_h3">Travel Canarias</h3>
@@ -153,7 +162,7 @@
         <!-- /* ----------  section-2  ---------- */ -->
         
         
-        <section class="portfolio_one-page" id="section-2">
+        <section class="portfolio_one-page" id="section-2" data-aos="fade-down" data-aos-duration="2000">
             <div class="portfolio_one-page-description">
                 <h2>Portfolio one - page</h2>
                 <p class="label">Enfoque...</p>
@@ -168,7 +177,7 @@
             </div>
             <div class="cajas_portfolio">
                 
-                <div class="cajas_portfolio_historia">
+                <div class="cajas_portfolio_historia" data-aos="fade-down" data-aos-duration="1000">
                     
                     <div class="label_description">
                         <p class="label">Como empezó...</p>
@@ -180,11 +189,13 @@
                         </p>
                      </div>    
                      <div>   
-                        <img src="img/JPG/portfolio.jpg" alt="portfolio">
+                         <a href="img/JPG/portfolio_2.jpg" target="blanck">    
+                            <img src="img/JPG/portfolio.jpg" alt="portfolio">
+                         </a>
                      </div>   
                 </div>     
                     
-                <div class="cajas_portfolio_historia">
+                <div class="cajas_portfolio_historia" data-aos="fade-down" data-aos-duration="1000">
                     
                     <div class="label_description">
                         <p class="label">Tecnologías...</p>
@@ -196,12 +207,14 @@
                         </p>
                      </div>    
                      <div class="orden">   
-                        <img src="img/JPG/Tecnologías.jpg" alt="tecnologías">
+                        <a href="img/JPG/Tecnologías_2.jpg" target="blanck">
+                            <img src="img/JPG/Tecnologías.jpg" alt="tecnologías">
+                        </a>
                      </div>   
                 </div>    
                 
                 
-                <div class="cajas_portfolio_historia">
+                <div class="cajas_portfolio_historia" data-aos="fade-down" data-aos-duration="1000">
                     
                     <div class="label_description">
                         <p class="label">Retos...</p>
@@ -216,12 +229,14 @@
                         </p>
                      </div>    
                      <div>   
-                        <img src="img/JPG/retos.jpg" alt="portfolio">
+                        <a href="img/JPG/retos_2.jpg" target="blanck">
+                            <img src="img/JPG/retos.jpg" alt="portfolio">
+                        </a>
                      </div>   
                 </div>     
                 
                 
-                 <div class="cajas_portfolio_historia">
+                 <div class="cajas_portfolio_historia" data-aos="fade-down" data-aos-duration="1000">
                     
                     <div class="label_description">
                         <p class="label">Soluciones...</p>
@@ -233,7 +248,7 @@
                         </p>
                      </div>    
                      <div class="orden">   
-                        <a href="img/JPG/soluciones.jpg" target="blanck">
+                        <a href="img/JPG/soluciones_2.jpg" target="blanck">
                             <img src="img/JPG/soluciones.jpg" alt="tecnologías">
                         </a>
                      </div>   
