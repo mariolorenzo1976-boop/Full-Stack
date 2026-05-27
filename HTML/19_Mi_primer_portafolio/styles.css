@@ -416,11 +416,13 @@
             font-family: var(--font_IBM_Plex_mono);
             align-self: flex-start;
             text-align: left;
-            background-color: var(--color_background_label);
-            border-radius: 5px;
+            /* background-color: var(--color_background_label); */
+            /* border-radius: 5px; */
             padding: 10px;
             transform: scaley(0.9);
             max-width: 180px;
+            margin-top: 40px;
+            
            
         }
 
@@ -433,12 +435,8 @@
             color: var(--font_color_gray_menu);
             text-indent: 30px;
             text-align: justify;
-            
-           
-           
+              
         }
-
-        
 
         .cajas_portfolio{
             display: flex;
@@ -451,28 +449,27 @@
 
         .cajas_portfolio_historia{
             display: flex;
-            margin-top: 20px;
+            margin-top: 0px;
             align-items: center;
-            max-width: 797px;
+            max-width: 897px;
             justify-content: space-between;
             gap: 60px;
+            background-color: var(--color_background_label);
+            padding:10px;
+            border-radius: 10px;
         }
 
         .label_description{
             gap: 50px;
-            /* max-width: 380px; */
         }
 
-          
-    
         .cajas_portfolio_historia img{
             max-width: 345px ;
             border-radius: 10px;
             border: solid 1px;
             border-color: var(--color_background_label);
             /* width: 100%; */
-           
-            
+                    
         }
 
         .orden {
@@ -480,9 +477,24 @@
         }
 
 
+        /* - leer más... - section-2  - */
+           
+       .hide{
+        display: none;
+       }
+
+       .show{
+        display: block;
+       }
+
+       .readMore_btn{
+        padding: 5px;
+        border-style: none;
+        border-radius: 5px;
+        cursor: pointer;
+       }
+
        
-
-
 
         /* ++++++++++ RESPONSIVE ++++++++++ */
 
@@ -609,6 +621,13 @@
                 width: 140px;
                 height: 40px;
             }
+
+              /* ++++++++++ sección 2 ++++++++++ */
+
+            .portfolio_one-page-description h2{
+                font-size: 60px;
+            }
+
             
         }    
                 /* ++++++++++ CAJAS  ++++++++++ */
@@ -630,9 +649,22 @@
                 order: 1;
             }
             
-        }
+
+                 /* ++++++++++ sección 2 ++++++++++ */
+
+            .portfolio_one-page-description h2{
+                font-size: 40px;
+            }
+
+            .cajas_portfolio_historia{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .orden {
+                order: 1;
+            }
             
-
-
-
+        }    
 
