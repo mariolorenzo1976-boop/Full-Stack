@@ -1,0 +1,9 @@
+datos = [{"user": "ana", "sport": "bike", "km": 20},
+        {"user": "ana", "sport": "run", "km": "30"},
+        {"user": "mario", "sport": "bike", "km": 50},
+        {"user": "ana", "sport": "swim", "km": None},
+        {"user": "mario", "sport": "run", "km": 40},
+        {"user": "mario", "sport": "bike", "km": 10},
+        {"user": None, "sport": "bike", "km": 25},
+        {"user": "lucia", "sport": "run", "km": 60},
+        ]
