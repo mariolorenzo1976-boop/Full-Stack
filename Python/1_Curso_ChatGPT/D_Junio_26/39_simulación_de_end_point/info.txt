@@ -1,0 +1,71 @@
+
+[
+    {"user":"mario","sport":"bike","km":40},
+    {"user":"ana","sport":"run","km":10},
+    {"user":"mario","sport":"bike","km":30},
+    {"user":"lucia","sport":"swim","km":20},
+    {"user":"mario","sport":"run","km":15},
+    {"user":"ana","sport":"bike","km":"50"},
+    {"user":"mario","sport":"bike","km":25},
+    {"user":null,"sport":"bike","km":30},
+    999
+]
+
+
+LO QUE PIDE EL FRONTEND
+
+Usuario: Mario
+
+Km totales: 320
+
+Deporte favorito: bike
+
+Número de actividades: 12
+
+
+SALIDA
+
+{
+    "user": "mario",
+    "total_km": 110,
+    "activities": 4,
+    "favorite_sport": "bike"
+}
+
+
+1) Filtramos datos para datos limpios con nombre de Mario
+    
+    Entrada sucia:
+    Salida Datos solo Mario Limpios:
+    [ {"user":"mario","sport":"bike","km":40}, ...]
+
+2) Km totales:
+    Entrada de datos:
+    [ {"user":"mario","sport":"bike","km":40}, ...]
+    Salida de datos:
+    {"mario": 110}
+
+3) Actividades:
+    Entrada de datos:
+     [ {"user":"mario","sport":"bike","km":40}, ...]
+     Salida de datos:
+     {"actividades": 4}
+
+4) Deporte favorito: agrupar por cantidad_deporte: [{"bike":4}]
+    Entrada de datos:
+     [ {"user":"mario","sport":"bike","km":40}, ...]
+     Salida de datos:
+     {"favorite_sport": "bike"}
+
+
+A) core
+
+    clean_data(user, data)
+    km_totals(clean_data)
+    number_of_activities(clean_data)
+    favorite_sport(clean_data)
+    
+
+
+
+
