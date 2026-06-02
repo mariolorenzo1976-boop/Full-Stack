@@ -1,0 +1,31 @@
+{ "user": "mario", "sport":"bike", "km":35}
+
+1) VALIDACIÓN DE DATOS
+    Datos entran: {"user": "mario", "sport":"bike", "km":35}
+    Datos salen: {"user": "mario", "sport":"bike", "km":35}
+
+    if datos entran estan mal
+        Datos salen: {"status":"error"}
+        sino
+        Datos salen: {"status": "ok"}
+        GUARDAR DATOS
+
+2) GUARDAR DATOS 
+
+
+1) MAIN
+
+    Print (add_valid_data(data))
+
+APY
+2) def valid_data(data)
+    
+      add_data(valid_data) 
+
+CORE
+3) def valid_data(data)
+    return {"status":"error"} o {"status": "ok"}
+
+4) def add_data(data)
+    return add_data {"user": "mario", "sport":"bike", "km":35}
+

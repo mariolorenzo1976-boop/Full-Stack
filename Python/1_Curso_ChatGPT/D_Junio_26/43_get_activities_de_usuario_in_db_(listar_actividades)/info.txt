@@ -1,0 +1,96 @@
+Datos:
+
+database = {
+    "activities": [
+        {"user":"mario","sport":"bike","km":35},
+        {"user":"ana","sport":"run","km":20},
+        {"user":"mario","sport":"run","km":10},
+        {"user":"lucia","sport":"swim","km":15},
+        {"user":"mario","sport":"bike","km":25}
+    ]
+}
+
+
+main
+
+# Nos llega petición Get : muestra actividades de 
+  usuario: mario
+
+  importamos la base de datos:
+  importamos fusiones de apy.py
+
+  enviamos Una lista con las actividades de mario en este
+  caso.
+
+  datos de salida:
+
+       [ {"user":"mario","sport":"bike","km":35},
+         {"user":"mario","sport":"run","km":10}, ...]
+
+
+apy
+Podemos hacer dos llamadas. Una que diga si el usuario tiene
+actividades que mostrar, y en caso de que si, otra que
+devuelva los datos.
+
+
+# Detectamos si el usuario tiene actividades:
+
+    Datos entrada:
+    database = {
+    "activities": [
+        {"user":"mario","sport":"bike","km":35},
+        {"user":"ana","sport":"run","km":20},
+        {"user":"mario","sport":"run","km":10},
+        {"user":"lucia","sport":"swim","km":15},
+        {"user":"mario","sport":"bike","km":25}
+    ]
+}
+    Datos salida:
+        {"status": ok}
+        {"status": "error", "message":"no data of user"}
+
+    
+    
+# si tiene actividades las volcamos
+
+    Datos de salida:
+
+     [ {"user":"mario","sport":"bike","km":35},
+       {"user":"mario","sport":"run","km":10}, ...]
+
+
+
+core
+   1) funsion que dice si hay actividad del usuario
+
+    Datos entrada:
+     database = {
+    "activities": [
+        {"user":"mario","sport":"bike","km":35},
+        {"user":"ana","sport":"run","km":20},
+        {"user":"mario","sport":"run","km":10},
+        {"user":"lucia","sport":"swim","km":15},
+        {"user":"mario","sport":"bike","km":25}
+    ]
+}
+
+    si hay devolvemos:  {"status": ok}
+    si no hay devolvemos : {"status": "error", "message":"no data of user"}
+
+    2) funsion que vuelca los datos 
+
+        Datos entrada:
+     database = {
+    "activities": [
+        {"user":"mario","sport":"bike","km":35},
+        {"user":"ana","sport":"run","km":20},
+        {"user":"mario","sport":"run","km":10},
+        {"user":"lucia","sport":"swim","km":15},
+        {"user":"mario","sport":"bike","km":25}
+    ]
+}
+        Datos de salida:
+
+     [ {"user":"mario","sport":"bike","km":35},
+       {"user":"mario","sport":"run","km":10}, ...]
