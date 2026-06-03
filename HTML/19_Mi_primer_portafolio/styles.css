@@ -21,6 +21,7 @@
             --font_color_gray_menu: #9C9C9C;
             --iconos_work_width: #444444;
             --color_background_label: #161616;
+            --color_botom_green_action: #62ba1b80;
           
         }
 
@@ -494,7 +495,88 @@
         cursor: pointer;
        }
 
+       /* ---------- BIKE WORLD - section-3  ---------- */
        
+       .hero{
+            position: relative;
+            width: 100%;
+            padding-top: 200px;
+            background-color: black;
+            
+       }
+       
+       .caja_hero{
+            display: flex;
+            flex-direction: column;
+            position: absolute; 
+            top: 40%;
+            left: 50%;
+            gap:20px;
+            border-radius: 5px;
+            width: 50%;
+            max-width: 890px;
+            transform: translateX(-10%);
+            transform: translateY(-10%);
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: #00000080;
+       
+       }
+
+       .hero img{
+            display: block;
+            width: 100%;
+            height: 700px;
+            object-fit: cover; 
+
+       }
+    
+        .hero h2{
+            color:white;
+            font-family: var(--font_Raleway);
+            font-size: clamp(40px, 5vw, 100px);
+       
+       }
+
+       .label_enfoque_hero{
+            font-size: clamp(20px, 3vw, 40px);
+            font-family: var(--font_IBM_Plex_mono);
+            color:white;
+        
+       }
+
+       .text_enfoque_hero{
+            color:white;
+            max-width: 500px;
+            font-size: clamp(14px, 2vw, 18px);
+            font-family: var(--font_IBM_Plex_mono);
+            line-height: 24px;
+            letter-spacing: 1px;
+            max-width: 280px;
+
+       }
+
+
+       .bike_world{
+            background-color: white;
+            color: var(--color_botom_green_action);
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            max-width: 897px;
+     
+
+        }
+
+        .centrar_texto{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+
+
 
         /* ++++++++++ RESPONSIVE ++++++++++ */
 
