@@ -11,7 +11,15 @@
             list-style: none;
             text-decoration: none;
             box-sizing: border-box;
+            
+            
         }
+        
+        
+            body::-webkit-scrollbar {
+            display: none;
+}
+        
 
 
         /* ---------- VARIABLES ---------- */
@@ -481,18 +489,18 @@
         /* - leer más... - section-2  - */
            
        .hide{
-        display: none;
+             display: none;
        }
 
        .show{
-        display: block;
+             display: block;
        }
 
        .readMore_btn{
-        padding: 5px;
-        border-style: none;
-        border-radius: 5px;
-        cursor: pointer;
+            padding: 5px;
+            border-style: none;
+            border-radius: 5px;
+            cursor: pointer;
        }
 
        /* ---------- BIKE WORLD - section-3  ---------- */
@@ -500,8 +508,9 @@
        .hero{
             position: relative;
             width: 100%;
-            padding-top: 200px;
+            padding-top: 0px;
             background-color: black;
+           
             
        }
        
@@ -509,25 +518,30 @@
             display: flex;
             flex-direction: column;
             position: absolute; 
+            right: 0;
             top: 40%;
             left: 50%;
             gap:20px;
             border-radius: 5px;
             width: 50%;
-            max-width: 890px;
-            transform: translateX(-10%);
-            transform: translateY(-10%);
-            padding-left: 20px;
-            padding-right: 20px;
+            transition: width 0.4 ease;
+            /* max-width: 100%; */
+            /* transform: translateX(-10%, -10%); */
+
+            padding-left: 10px;
+            padding-right: 10px;
             background-color: #00000080;
        
        }
+
+       
 
        .hero img{
             display: block;
             width: 100%;
             height: 700px;
             object-fit: cover; 
+            
 
        }
     
@@ -562,16 +576,40 @@
             color: var(--color_botom_green_action);
             display: flex;
             flex-direction: column;
-            gap:20px;
             max-width: 897px;
-     
-
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            gap: 10px;
+            margin: 10px;
+         
         }
+        
+ 
+       
+        
 
         .centrar_texto{
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        .portfolio_one-page3{
+            background-color: white;
+            color: var(--color_botom_green_action);
+            margin-top: 10px;
+            
+        }
+
+        .label_description3{
+            gap: 50px;
+            max-width: 897px;
+
+        }
+
+        .label3{
+            font-size: 40px;;
         }
 
 
