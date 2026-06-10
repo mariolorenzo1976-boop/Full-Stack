@@ -1,5 +1,5 @@
 *{
-    /* outline:1px solid red; */
+    outline:1px solid red;
 }
 
 *{
@@ -16,6 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin:0 auto;
 
 }
 
@@ -28,6 +29,7 @@
     overflow: hidden;
     margin: 20px;
     border-radius: 10px;
+    cursor: pointer;
     /* transition:0.3s ease; */
     
 }
