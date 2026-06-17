@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mundo</title>
+    <style>
+        .categorias-section {
+            padding: 40px 20px;
+        }
+
+        .card-container {
+            display: flex;
+            /* Esto pone las tarjetas en fila */
+            gap: 20px;
+            /* Espacio entre tarjetas */
+            justify-content: center;
+            /* Centrar las tarjetas si hay espacio */
+        }
+
+        .category-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            /* Bordes redondeados para el efecto tarjeta */
+            overflow: hidden;
+            /* Para que las imágenes no se salgan del borde redondeado */
+            flex: 1;
+            /* Hace que las tarjetas ocupen el mismo ancho */
+            text-align: center;
+        }
+
+        .category-card img {
+            width: 100%;
+            /* La imagen ocupa todo el ancho de la tarjeta */
+            height: auto;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .btn-action {
+            display: inline-block;
+            /* Para que el enlace se comporte como un bloque/botón */
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            /* Color de fondo del botón */
+            color: white;
+            text-decoration: none;
+            /* Quita el subrayado del enlace */
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-action:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>¡Hola Mundo!</h1>
+    <!-- Sección principal que contendrá las tarjetas de categoría -->
+    <section class="categorias-section">
+        <h2>Categorías</h2>
+
+        <!-- Contenedor que organiza las 3 tarjetas en fila/columna -->
+        <div class="card-container">
+
+            <!-- PRIMERA CARD -->
+            <div class="category-card">
+                <img src="ruta/a/foto1.jpg" alt="Descripción de la categoría 1">
+                <div class="card-body">
+                    <h3>Título de la Categoría Uno</h3>
+                    <p>Breve descripción aquí. Esta tarjeta presenta todo lo necesario para atraer al usuario y hacerlo
+                        hacer clic en el botón.</p>
+                    <a href="/enlace-categoria1" class="btn-action">Ver Detalles</a>
+                </div>
+            </div>
+
+            <!-- SEGUNDA CARD -->
+            <div class="category-card">
+                <img src="ruta/a/foto2.jpg" alt="Descripción de la categoría 2">
+                <div class="card-body">
+                    <h3>Título de la Categoría Dos</h3>
+                    <p>Otra descripción atractiva. Cada tarjeta debe contar una pequeña historia para motivar al clic y
+                        la navegación.</p>
+                    <a href="/enlace-categoria2" class="btn-action">Ver Detalles</a>
+                </div>
+            </div>
+
+            <!-- TERCERA CARD -->
+            <div class="category-card">
+                <img src="ruta/a/foto3.jpg" alt="Descripción de la categoría 3">
+                <div class="card-body">
+                    <h3>Título de la Categoría Tres</h3>
+                    <p>Finalmente, tu tercera categoría. Asegúrate de que el contenido sea relevante y enfocado en la
+                        experiencia del usuario.</p>
+                    <a href="/enlace-categoria3" class="btn-action">Ver Detalles</a>
+                </div>
+            </div>
+
+        </div> <!-- /.card-container -->
+    </section>
+
+
+</body>
+
+</html>

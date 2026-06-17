@@ -1,15 +1,11 @@
-
-
-
 let user = document.querySelector(".usuario");
-
 let password = document.querySelector(".contraseña");
 let confirm = document.querySelector(".confimación")
 let form = document.querySelector(".formulario")
 
 //CAPTURAMOS EL <ul> para crear la lista
 let listta = document.querySelector(".lista-usuarios")
-let listaVisible = false
+
 //CREAMOS EL ELEMENTO <li>
 
 
@@ -20,14 +16,16 @@ let listaVisible = false
 // listta.appendChild(li);
 
 // BASE DATOS
+
 let usuarios = [
     { user: "Mario", pass: "123" },
     { user: "Ana", pass: "456" }
 ];
 
 
-// FUNCIONES
 
+
+// FUNCIÓN PARA CREAR BOTÓN
 
 function crearBotonEliminar(){
     let button = document.createElement("Button")
@@ -38,38 +36,26 @@ function crearBotonEliminar(){
 
 
 
-function mostrarLista(dato){
-    if (dato == "true"){
-        for (let user of usuarios){
-            let li = document.createElement("li");
-            listta.appendChild(li)
-            li.textContent = user.user
-            crearBotonEliminar()
-            
-            
-        }
-       
-    }
-    else {
+
+// FUNSIÓN PARA MOSTRAR LA LISTA
+
+function mostrarLista(){
+    listta.innerHTML = ""; //Limpia la lista
+
+    for (let usuario of usuarios){
         let li = document.createElement("li");
-        li.textContent = user.value
-        listta.appendChild(li)
-        console.log(user.value)
-        crearBotonEliminar()
-        
-    }
-}
+        li.textContent =usuario.user;
+        crearBotonEliminar(li);
+        listta.appendChild(li);
 
 
-if (listaVisible == false){
-    mostrarLista("true")
-    listaVisible = true
-    console.log("entro")
-}
+}}
 
+// MOSTRAR LISTA AL CARGAR
 
+mostrarLista()
 
-// EVENTOS
+// EVENTO FORMULARIO
 
 form.addEventListener("submit", function(event){
     event.preventDefault()
@@ -107,7 +93,7 @@ form.addEventListener("submit", function(event){
         console.log(usuarios)
         confirm.textContent = "usuario creado"
         confirm.style.color="green"
-        mostrarLista("false")
+        mostrarLista()
         user.value=""
         password.value="" 
         user.focus() 
