@@ -1,4 +1,4 @@
-/* * {outline: 1px solid red;} */
+ * {outline: 1px solid red;} 
 
 /* ---BODY--- */
 
@@ -58,6 +58,9 @@ h2 {
     margin: 0 auto;
     padding: 10px;
 
+}
+:root {
+       --color-lineas:#353333;
 }
 
 .header-nav {
@@ -145,6 +148,8 @@ h2 {
     display: flex;
     flex-direction: column;
     position: relative;
+    max-width: 3000px;
+    margin: 0 auto;
 }
 
 .hero-text2 {
@@ -396,16 +401,27 @@ h2 {
 }
 
 
+
 /* ---FOOTER--- */
 
 .footer{
-    width: 100%;
+    
+   width: 100%;
+   background-color: black;
+   display: flex;
+   justify-content: center;
+   margin: auto;
+}
+
+.footer-container{
+    max-width: 2500px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     color: white;
     background-color: black;
-    padding: 40px;
-    height: 600px;
+    padding: 10px;
+    height: auto;
     margin-top: 200px;
     gap:20px;
 }
@@ -421,4 +437,36 @@ h2 {
     color: white; 
     margin-top: 20px;
 
+}
+
+/* .footer > div{
+    padding: 0 40px;
+}
+
+.footer > div:not(:last-child){
+    border-right: 1px solid var(--color-lineas);
+} */
+
+.footer-social{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    
+}
+
+.footer-social a{
+    color:white;
+}    
+
+.copyright .footer-copy{
+    background-color: black;
+    color:white;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.copyright {
+    border-top: 1px solid var(--color-lineas);
+    position: relative;
 }
